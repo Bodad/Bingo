@@ -1,11 +1,16 @@
+import bingo.BingoSimulator;
 import org.jboss.weld.environment.se.Weld;
 import org.jboss.weld.environment.se.WeldContainer;
+import sudoku.SudokuSimulator;
 
 import javax.inject.Inject;
 
 public class Main {
     @Inject
     BingoSimulator bingoSimulator;
+
+    @Inject
+    SudokuSimulator sudokuSimulator;
 
 
 //    @Inject TestInjection testInjection;
@@ -20,8 +25,9 @@ public class Main {
 
 
     public void run(){
-        bingoSimulator.run();
-//testInjection.sayHello();
+ //       bingoSimulator.run();
+        sudokuSimulator.run();
+
     }
 
 }
